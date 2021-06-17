@@ -4,11 +4,7 @@ package com.javaproblem.demo.controller;
 import com.javaproblem.demo.Requests.TimeRequest;
 import com.javaproblem.demo.Responses.TimeResponse;
 import com.javaproblem.demo.models.Time;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -16,6 +12,7 @@ import java.util.TimeZone;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin(origins = "*")
 public class DemoController {
 
     /*here we comunicate with the internet*/
